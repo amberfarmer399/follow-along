@@ -36,4 +36,6 @@ Tech Stack (Short): . Frontend: React.js, Redux, Bootstrap/Tailwind CSS. . Backe
 
 Why Build This Project? (Short):
 
-. Practical Relevance: ECommerce is a high-demand, versatile application in web development. . Comprehensive Learning: Covers user authentication, APIs, databases, and payment systems. . Scalability: Can grow with features like AI recommendations or multi-vendor support. . Portfolio-Worthy: Showcases skills in building modern, scalable web solutions.
+. Practical Relevance: ECommerce is a high-demand, versatile application in web development. . Comprehensive Learning: Covers user authentication, APIs, databases, and payment systems. . Scalability: Can grow with features like AI recommendations or multi-vendor support. . Portfolio-Worthy: Showcases skills in building modern, scalable web solution. 
+
+milestone 3
