@@ -38,4 +38,4 @@ Why Build This Project? (Short):
 
 . Practical Relevance: ECommerce is a high-demand, versatile application in web development. . Comprehensive Learning: Covers user authentication, APIs, databases, and payment systems. . Scalability: Can grow with features like AI recommendations or multi-vendor support. . Portfolio-Worthy: Showcases skills in building modern, scalable web solution. 
 
-milestone 3
+milestone 3:
