@@ -28,6 +28,6 @@ process.on("unhand1edRejection", (err) => {
 
 
     server.close(() => {
-        process.exit(1); // Exit with failure
+        process.exit(1); // Exit with fail
     })
 });
