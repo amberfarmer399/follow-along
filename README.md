@@ -72,3 +72,11 @@ Here’s an updated paragraph for your **README.md** file under the section **Mi
 ### Milestone 6: Achievements
 
 In Milestone 6, we added the functionality to upload a file during the sign-up process. This feature allows users to attach documents or images, enhancing the sign-up experience and making the application more versatile. The implementation included integrating file upload functionality into the backend, ensuring secure handling and storage of uploaded files. This milestone marks a significant step in improving user interactivity and expanding the application's capabilities.
+
+### Milestone 7: Login Authentication 📝  
+
+In this milestone, we implement the login functionality by creating an authentication endpoint. The system accepts user credentials (email/username and password), retrieves the corresponding user from the database, and validates the password using bcrypt. The entered password is hashed and compared with the stored hash to ensure secure authentication. If the credentials match, access is granted; otherwise, an error is returned. This step enhances security by preventing unauthorized access and ensuring user data protection.
+
+### Milestone 8: Product Card Component 📝  
+
+In this milestone, we create a reusable card component to display product details efficiently. The card component is designed to accept dynamic props such as name, image, and price, ensuring flexibility and reusability across the application. To showcase multiple products, we use array mapping to render a card for each item dynamically. Additionally, the homepage layout is structured using a grid or flexbox to maintain a clean and organized appearance, enhancing the user experience.
