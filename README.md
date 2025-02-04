@@ -80,3 +80,7 @@ In this milestone, we implement the login functionality by creating an authentic
 ### Milestone 8: Product Card Component 📝  
 
 In this milestone, we create a reusable card component to display product details efficiently. The card component is designed to accept dynamic props such as name, image, and price, ensuring flexibility and reusability across the application. To showcase multiple products, we use array mapping to render a card for each item dynamically. Additionally, the homepage layout is structured using a grid or flexbox to maintain a clean and organized appearance, enhancing the user experience.
+
+### Milestone 9: Designing the createProduct page
+
+In this milestone, we learn to create a product form to collect all necessary details, including multiple images. The data will be stored in a database and displayed on the product homepage built in the previous milestone. This step is essential for managing product listings efficiently. 🚀
