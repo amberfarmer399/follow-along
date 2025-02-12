@@ -16,7 +16,7 @@ const ValidationFormObject = {
         maxLength: 128,
         hasUpperCase: /[A-Z]/,
         hasLowerCase: /[a-z]/,
-        hasSpecialChar: /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/,
+        hasSpecialChar: /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/,
       };
   
       if (password.length < passwordRegex.minLength) {

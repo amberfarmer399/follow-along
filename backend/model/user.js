@@ -56,21 +56,7 @@ const userSchema = new mongoose.Schema({
       required: true,
     },
   },
-  cart: [
-    {
-      productId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Product",
-        required: true,
-      },
-      quantity: {
-        type: Number,
-        required: true,
-        min: [1, "Quantity cannot be less than 1"],
-        default: 1,
-      },
-    },
-  ],
+  
   createdAt: {
     type: Date,
     default: Date.now(),
@@ -79,24 +65,24 @@ const userSchema = new mongoose.Schema({
   resetPasswordTime: Date,
 });
 
-userSchema.pre("save", async function (next) {
-  if (!this.isModified("password")) {
-    next();
-  }
+// userSchema.pre("save", async function (next) {
+//   if (!this.isModified("password")) {
+//     next();
+//   }
 
-  this.password = await bcrypt.hash(this.password, 10);
-});
+//   this.password = await bcrypt.hash(this.password, 10);
+// });
 
-// jwt token
-userSchema.methods.getJwtToken = function () {
-  return jwt.sign({ id: this._id }, process.env.JWT_SECRET_KEY, {
-    expiresIn: process.env.JWT_EXPIRE,
-  });
-};
+// // jwt token
+// userSchema.methods.getJwtToken = function () {
+//   return jwt.sign({ id: this._id }, process.env.JWT_SECRET_KEY, {
+//     expiresIn: process.env.JWT_EXPIRE,
+//   });
+// };
 
-// compare password
-userSchema.methods.comparePassword = async function (enteredPassword) {
-  return await bcrypt.compare(enteredPassword, this.password);
-};
+// // compare password
+// userSchema.methods.comparePassword = async function (enteredPassword) {
+//   return await bcrypt.compare(enteredPassword, this.password);
+// };
 
 module.exports = mongoose.model("User", userSchema);

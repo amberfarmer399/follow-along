@@ -1,8 +1,7 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom"; 
-import { LoginPage, SignupPage, Home,CreateProduct} from "./Routes.jsx"
+import { LoginPage, SignupPage, CreateProduct, Home } from "./Routes.jsx"
 
 import './App.css';
-import CreateProduct from "./pages/createProduct.jsx";
 
 function App(){
   return(
@@ -10,9 +9,9 @@ function App(){
       <Routes>
         <Route path="/Login" element={<LoginPage/>}/>
         <Route path="/Signup" element={<SignupPage/>}/>
-        <Route path="/Home" element={<Home/>}/>
-        <Route path="/create-product" element={<CreateProduct />} />
-
+        <Route path="/create-product" element= {<CreateProduct />} />
+        <Route path="/" element= {<Home />} />
+        <Route path="/create-product/:id" element={<CreateProduct />} />
       </Routes>
     </BrowserRouter>
   )
