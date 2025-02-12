@@ -1,5 +1,7 @@
 const app = require("./app");
 const connectDatabase = require("./db/Database");
+const port = process.env.PORT || 8000;
+
 
 // Handling uncaught Exception when setting up backend server
 process.on("uncaughtException", (err) => {

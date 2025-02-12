@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import Myproduct from "../components/auth/myproduct";
+import Myproduct from "../components/auth/myProduct";
 import NavBar from "../components/auth/nav";
 
 export default function MyProducts() {
@@ -13,7 +13,7 @@ export default function MyProducts() {
         if (!email) return;
         setLoading(true);
         setError(null);
-        fetch(`http://localhost:5000/api/v2/product/my-products?email=${email}`)
+        fetch(`http://localhost:8000/api/v2/product/my-products?email=${email}`)
             .then((res) => {
                 if (!res.ok) {
                     throw new Error(`HTTP error! status: ${res.status}`);
